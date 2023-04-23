@@ -14,7 +14,7 @@ const LiveSearch = () => {
     let string = e.target.value
     setInput(string)
     if(string!==""){
-      axios.get(`http://localhost:3000/api/${string}`).then(result=>{
+      axios.get(`https://lustrous-starship-b2fcfc.netlify.app/api/${string}`).then(result=>{
       setFoundMovies(result.data.results)
     })
     }else{
