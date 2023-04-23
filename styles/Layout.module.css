@@ -28,4 +28,8 @@
     height: 5vh;
     width: 100%;
     background-color: var(--secondary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
 }

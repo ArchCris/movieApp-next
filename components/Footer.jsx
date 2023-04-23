@@ -4,7 +4,7 @@ import styles from "../styles/Layout.module.css"
 const Footer = () => {
   return (
     <div className={styles.footerConteiner}>
-      Footer
+      This Movie App was developed by CrissMDev Ⓡ
     </div>
   )
 }
