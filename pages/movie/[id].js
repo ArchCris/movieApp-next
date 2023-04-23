@@ -13,7 +13,7 @@ export const getServerSideProps = async (context) => {
 };
 
 const DetailMovie = (props) => {
-    console.log(props)
+    
   return (
     <div className={styles.homeContainer}>
         {props.overview}
