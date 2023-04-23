@@ -7,14 +7,21 @@
     justify-content: space-between;
     align-items: center;
 }
+.navBarConteiner .logo{
+    transition: all 1s ease;
+}
+.navBarConteiner .logo:hover{
+    transform: rotate(30deg);
+    filter: drop-shadow(0px 0px 4px white);
+}
 .navBarConteiner .themeToggle{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: lightblue;
+    background-color: var(--primary-color);
 }
 .navBarConteiner .themeToggle:hover{
-    background-color: rgb(101, 191, 221);
+    background-color: var(--tertiary-color);
     cursor: pointer;
 }
 .footerConteiner{
