@@ -6,11 +6,21 @@ import logo from "../public/favicon.ico"
 import LiveSearch from './LiveSearch'
 
 const Navbar = () => {
+
+  const toggleTheme = () =>{
+    var currentTheme = document.documentElement.getAttribute("data-theme")
+    if(currentTheme === null || currentTheme === "null"){
+      document.documentElement.setAttribute("data-theme", "dark")
+    }else{
+      document.documentElement.setAttribute("data-theme", "null")
+    }
+  }
+
   return (
     <div className={styles.navBarConteiner}>
       <Link href={"/"}><Image width={30} src={logo} alt='logo'></Image></Link>
         <LiveSearch/>
-      <Link href={"/"}><Image width={30} src={logo} alt='logo'></Image></Link>
+      <button onClick={()=>{toggleTheme()}} className={styles.themeToggle}></button>
     </div>
   )
 }

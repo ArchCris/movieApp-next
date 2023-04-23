@@ -7,6 +7,16 @@
     justify-content: space-between;
     align-items: center;
 }
+.navBarConteiner .themeToggle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+.navBarConteiner .themeToggle:hover{
+    background-color: rgb(101, 191, 221);
+    cursor: pointer;
+}
 .footerConteiner{
     height: 5vh;
     width: 100%;

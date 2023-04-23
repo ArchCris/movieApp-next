@@ -3,13 +3,15 @@ import styles from "../styles/Home.module.css"
 
 export async function getServerSideProps(context) {
 
-  let queryTest = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=Ja`
-  let query = `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
-
-  const data = await fetch(query)
-  const res = await data.json()
-  return {
-    props: {res}
+  try{
+    let query = `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
+    const data = await fetch(query)
+    const res = await data.json()
+    return {
+      props: {res}
+    }
+  } catch(err){
+    console.log(err)
   }
 }
 
