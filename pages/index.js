@@ -2,7 +2,6 @@ import MovieCard from "@/components/MovieCard"
 import styles from "../styles/Home.module.css"
 
 export async function getServerSideProps(context) {
-
   try{
     let query = `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.TMDB_API_KEY}&language=en-US&page=1`
     const data = await fetch(query)
