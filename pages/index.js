@@ -20,11 +20,11 @@ export default function Home(props) {
 
   return (
       <main className={styles.homeContainer}>
-        {popularMovies.map((movie,key)=>{
+        {popularMovies ? popularMovies.map((movie,key)=>{
           return(
             <MovieCard key={key} movieName={movie.title} movieImage={movie.poster_path} movieScore={movie.vote_average} movieId={movie.id}/>
           )
-        })}
+        }):null}
       </main>
   )
 }
