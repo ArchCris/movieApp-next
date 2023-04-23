@@ -13,7 +13,7 @@ const LiveSearch = () => {
   const handleInput = (e) =>{
     let string = e.target.value
     setInput(string)
-    if(string!==""){
+    if(string!=="" || string!==null){
       axios.get(`${process.env.NEXT_PUBLIC_FRONTEND_URL}api/${string}`).then(result=>{
       setFoundMovies(result.data.results)
     })
