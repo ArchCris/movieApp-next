@@ -1,0 +1,19 @@
+.liveSearch_conteiner{
+    background-color: var(--tertiary-color);
+    position: relative;
+    width: 30%;
+}
+.liveSearch_conteiner .input{
+    height: 40px;
+    width: 100%;
+}
+.searchResults{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+.searchResults li:hover{
+    background-color: grey;
+}

@@ -1,0 +1,14 @@
+.navBarConteiner{
+    height: 10vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerConteiner{
+    height: 5vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+}

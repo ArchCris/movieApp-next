@@ -1,0 +1,47 @@
+.movieCard{
+    margin: 4rem 0 1rem 0;
+    height: 400px;
+    width: 300px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease;
+    position: relative;
+}
+.movieCard .image{
+    width: auto;
+}
+.movieCard .title{
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+}
+.movieCard .score{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    color: var(--primary-color);
+    border: 4px solid var(--tertiary-color);
+    
+}
+.movieCard:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  
+
+
