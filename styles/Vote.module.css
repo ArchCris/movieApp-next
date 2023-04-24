@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+.voteConteiner{
+    font-family: 'Work Sans', sans-serif;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.voteConteiner div{
+    display: flex;
+}
+.voteConteiner .red{
+    color: red;
+}
+.voteConteiner .yellow{
+    color: yellow;
+}
+.voteConteiner .green{
+    color: green;
+}

@@ -1,5 +1,4 @@
 .detailMovie{
-    height: 85vh;
     min-height: 85vh;
     width: 100%;
     background-color: var(--primary-color);
@@ -10,18 +9,39 @@
     width: 30%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
+    
 }
 .detailMovie img{
+    margin-top: 5rem;
     width: 80%;
 }
 .detailMovie .right{
-    padding: 1rem;
+    padding: 5rem;
     height: 100%;
     width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     color: white;
+}
+.right .data{
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .detailMovie{
+        flex-direction: column;
+    }
+    .detailMovie .left{
+        height: 70%;
+        width: 100%;
+    }
+    .detailMovie img{
+        width: 60%;
+    }
+    .detailMovie .right{
+        height: 30%;
+        width: 100%;
+    }
 }

@@ -17,3 +17,8 @@
 .searchResults li:hover{
     background-color: grey;
 }
+@media (max-width: 768px) {
+    .liveSearch_conteiner{
+        width: 60%;
+    }
+}
